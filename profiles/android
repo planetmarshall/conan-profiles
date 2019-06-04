@@ -1,4 +1,4 @@
-ndk=/opt/android-ndk-r19c
+ndk=$ANDROID_NDK_HOME
 host=linux-x86_64
 toolchain=$ndk/toolchains/llvm/prebuilt/$host
 
