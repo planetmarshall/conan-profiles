@@ -1,0 +1,15 @@
+ndk=/opt/android-ndk-r19c
+host=linux-x86_64
+toolchain=$ndk/toolchains/llvm/prebuilt/$host
+
+[settings]
+compiler=clang
+compiler.version=8
+compiler.libcxx=libc++
+os=Android
+build_type=Release
+
+[env]
+PATH=[$toolchain/bin]
+CONAN_CMAKE_TOOLCHAIN_FILE=$ndk/build/cmake/android.toolchain.cmake
+
